@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toma Café</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: #f5e6d3;
+        }
+
+        .mesa {
+            display: none;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: brown;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Clique para tomar um café ☕</h1>
+
+    <button onclick="mostrarMesa()">Sentar na mesa</button>
+
+    <div class="mesa" id="mesa">
+        <h2>🍞 Pão</h2>
+        <h2>☕ Café</h2>
+    </div>
+
+    <script>
+        function mostrarMesa() {
+            document.getElementById("mesa").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
